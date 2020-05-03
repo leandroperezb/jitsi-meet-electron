@@ -188,7 +188,7 @@ class Conference extends Component<Props, State> {
     render() {
         return (
             <Wrapper innerRef = { this._ref }>
-                { this._maybeRenderLoadingIndicator() }
+                {this._maybeRenderLoadingIndicator()}
             </Wrapper>
         );
     }
@@ -219,6 +219,17 @@ class Conference extends Component<Props, State> {
             configOverwrite,
             onload: this._onIframeLoad,
             parentNode: this._ref.current,
+            interfaceConfigOverwrite: {
+                SHOW_WATERMARK_FOR_GUESTS: false,
+                SHOW_JITSI_WATERMARK: false,
+                DISABLE_PRESENCE_STATUS: false,
+                TOOLBAR_BUTTONS: [ 'microphone', 'camera', 'closedcaptions', 'desktop', 'fullscreen',
+                    'fodeviceselection', 'hangup', 'profile', 'info', 'chat', 'recording', 'localrecording',
+                    'livestreaming', 'etherpad', 'sharedvideo', 'settings', 'raisehand',
+                    'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
+                    'tileview', 'videobackgroundblur', 'download', 'help', 'mute-everyone',
+                    'e2ee' ]
+            },
             roomName
         };
 
