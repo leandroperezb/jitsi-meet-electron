@@ -212,7 +212,11 @@ class Conference extends Component<Props, State> {
 
         const configOverwrite = {
             startWithAudioMuted: this.props._startWithAudioMuted,
-            startWithVideoMuted: this.props._startWithVideoMuted
+            startWithVideoMuted: this.props._startWithVideoMuted,
+            desktopSharingFrameRate: {
+                min: 20,
+                max: 30
+            }
         };
 
         const options = {
