@@ -216,7 +216,9 @@ class Conference extends Component<Props, State> {
             desktopSharingFrameRate: {
                 min: 20,
                 max: 30
-            }
+            },
+            resolution: 720,
+            constraints: null
         };
 
         const options = {
