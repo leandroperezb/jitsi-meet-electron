@@ -217,6 +217,7 @@ class Conference extends Component<Props, State> {
                 min: 20,
                 max: 30
             },
+            enableNoisyMicDetection: false,
             resolution: 720,
             constraints: null
         };
