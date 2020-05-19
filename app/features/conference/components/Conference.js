@@ -218,6 +218,7 @@ class Conference extends Component<Props, State> {
                 max: 30
             },
             enableNoisyMicDetection: false,
+            enableTalkWhileMuted: false,
             resolution: 720,
             constraints: null
         };
