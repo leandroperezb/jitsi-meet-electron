@@ -228,6 +228,7 @@ class Conference extends Component<Props, State> {
             onload: this._onIframeLoad,
             parentNode: this._ref.current,
             interfaceConfigOverwrite: {
+                SHOW_INVITE_MORE_HEADER: false,
                 SHOW_WATERMARK_FOR_GUESTS: false,
                 SHOW_JITSI_WATERMARK: false,
                 DISABLE_PRESENCE_STATUS: false,
